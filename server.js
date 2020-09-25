@@ -21,3 +21,5 @@ app.route('/api')
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
+
+res.send('<p>Hello world</p>');
