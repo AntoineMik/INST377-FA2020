@@ -1,5 +1,7 @@
 /* || General setup */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -57,6 +59,7 @@ p, li {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+  font-family: 'Roboto', sans-serif;
 }
 
 body > * {
@@ -65,7 +68,7 @@ body > * {
 }
 
 .main, .header, nav, .article, .aside, .footer, section {
-  background-color: rgba(0,255,0,0.5);
+  background-color: rgba(0, 60, 255, 0.589);
   padding: 1%;
 }
 
