@@ -34,7 +34,19 @@
 }
 
 .contents {
-    display: block;
+    display: flex;
+
+}
+
+.media {
+
+    flex: 33.33%;
+    display: flex;
+}
+
+.other{
+
+    display: flex;
 
 }
 
