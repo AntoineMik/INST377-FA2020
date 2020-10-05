@@ -1,0 +1,32 @@
+/* || General setup */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/* || header layout */
+.header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: darkseagreen;
+}
+
+h1 {
+    flex: 5;
+    color: greenyellow;
+}
+
+/* || wrapper layout */
+
+.wrapper {
+    display: flex;
+  
+
+}
+
+/* || typography */
+
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2a2a2a;
+  }
