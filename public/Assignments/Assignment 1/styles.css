@@ -8,19 +8,33 @@
     margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
-    background-color: darkseagreen;
+    background-color: darkgreen;
+    padding-bottom: 15px;
 }
 
-h1 {
+.header h1 {
     flex: 5;
-    color: greenyellow;
+    color: darkseagreen;
 }
+
+.header img {
+    display: block;
+    height: 100px;
+    padding-top: 20.15px;
+}
+
 
 /* || wrapper layout */
 
 .wrapper {
     display: flex;
-  
+    max-width: 960px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents {
+    display: block;
 
 }
 
