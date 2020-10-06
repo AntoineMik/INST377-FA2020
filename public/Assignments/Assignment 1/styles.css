@@ -115,19 +115,19 @@ html, body {
         display: flex;
     }
 
-    /*.contents {
+    .contents {
         justify-content: center;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
 
-    } */
+    } 
 
     .media {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        /*align-items: center;*/
+        align-items: center;
         margin: 0;
         margin-bottom: 15px;
     }
