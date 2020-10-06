@@ -19,7 +19,7 @@ html, body {
     flex-flow: row wrap;
     justify-content: center;
     background-color: darkblue;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-family: 'Cinzel Decorative', sans-serif;
     font-size: 400;
     color: powderblue;
@@ -66,6 +66,7 @@ html, body {
 .media {
     flex: 33.33%;
     flex-direction: column;
+    background-color: lightsteelblue;
 }
 
 .media img{
@@ -76,25 +77,28 @@ html, body {
 
 .media img{
     border: 1px solid red;
-    background-color: lightsteelblue;
     border-radius: 4px;
     max-width: 100%;
 }
 
 .media p{
-    text-align: center;
-    background-color: lightsteelblue;
+    text-align: left;
+    background-color: rgb(182, 198, 219);
+    margin: auto;
 }
 
 .about{
     display: flex;
     flex: 66.66%;
-    background-color: lightskyblue;
+    background-color: steelblue ;
     justify-content: center;
 }
 
 .items{
     justify-content: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: lightskyblue;
 }
 
 
@@ -120,7 +124,6 @@ html, body {
 
     .media {
         display: flex;
-        flex: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
