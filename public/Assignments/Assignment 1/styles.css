@@ -82,7 +82,8 @@ html, body {
 }
 
 .media p{
-    text-align: left;
+    display: contents;
+    text-align: block;
     background-color: rgb(182, 198, 219);
     margin: auto;
 }
@@ -119,16 +120,15 @@ html, body {
         justify-content: center;
         display: flex;
         flex-flow: column wrap;
-
     } 
 
     .media {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: center;
         margin: 0;
         margin-bottom: 15px;
     }
+
 }
