@@ -38,8 +38,15 @@ html, body {
 
 .header img {
     display: flex;
-    height: 100px;
-    padding-top: 20.15px;
+    justify-self: end;
+    height: 150px;
+    padding-top: 10.15px;
+    padding-right: 10.15px;
+}
+
+.header  h1{
+    /*justify-self: center;*/
+    padding: center;
 }
 
 
@@ -52,12 +59,14 @@ html, body {
     /*max-width: 960px;*/
     justify-content: center;
     background-color: lightsteelblue;
+    
 }
 
 .contents {
     display: flex;
     max-width: 960px;
     /*flex-direction: row;*/
+    justify-content: space-between;
     flex-flow: row wrap;
     
 }
@@ -90,13 +99,17 @@ html, body {
     background-color: lightskyblue;
 }
 
+
 .about .items h3 {
     font-family: 'Piazzolla', serif;
     font-weight: 800;
     font-style: oblique;
 }
 
-
+.items
+{
+    margin: 10px;
+}
 
 /* || typography */
 
