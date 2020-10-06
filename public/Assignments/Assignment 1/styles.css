@@ -1,5 +1,23 @@
 /* || General setup */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;400;800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+  
+  }
+  
+  body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #6091C3;
+  }
 
 
 
@@ -7,18 +25,19 @@
 .header {
     margin-bottom: 10px;
     display: flex;
+    border: none ;
     flex-flow: row wrap;
-    background-color: darkgreen;
+    background-color: darkblue;
     padding-bottom: 15px;
-}
-
-.header h1 {
-    flex: 5;
-    color: darkseagreen;
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 400;
+    color: powderblue;
+    justify-content: space-between;
+    
 }
 
 .header img {
-    display: block;
+    display: flex;
     height: 100px;
     padding-top: 20.15px;
 }
@@ -28,31 +47,76 @@
 
 .wrapper {
     display: flex;
-    max-width: 960px;
-    align-items: center;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*max-width: 960px;*/
     justify-content: center;
+    background-color: lightsteelblue;
 }
 
 .contents {
     display: flex;
-
+    max-width: 960px;
+    /*flex-direction: row;*/
+    flex-flow: row wrap;
+    
 }
 
 .media {
-
     flex: 33.33%;
-    display: flex;
+    flex-direction: column;
 }
 
-.other{
-
-    display: flex;
-
+.media img{
+    max-width: 100%;
+    max-height: 100%;
 }
+
+.media img{
+    border: 1px solid red;
+    background-color: lightsteelblue;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.media p{
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.about{
+    display: flex;
+    background-color: lightskyblue;
+}
+
+.about .items h3 {
+    font-family: 'Piazzolla', serif;
+    font-weight: 800;
+    font-style: oblique;
+}
+
+
 
 /* || typography */
 
-h1, h2, h3 {
-    font-family: 'Cinzel Decorative', cursive;
-    color: #2a2a2a;
-  }
+  @media screen and (max-width: 1000px){
+
+    .wrapper{
+        display: flex;
+    }
+
+    .contents {
+        justify-content: center;
+
+    } 
+
+    .media {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
