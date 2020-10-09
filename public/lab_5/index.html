@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Antoine Vignon Lab 4</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Mikpongbeho Antoine Vignon Lab 4</h1>
+            </header>
+            <form action="/api" method="POST">
+              <ul class="flex-outer">
+                <li>
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="Enter your first name here" maxlength="140">
+                </li>
+                <li>
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Enter your last name here" maxlength="140">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter your email here">
+                </li>
+                <li>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" placeholder="Enter your phone here">
+                </li>
+                <li>
+                  <label for="message">Message</label>
+                  <textarea rows="5" cols="33" id="message" placeholder="Enter your message here"></textarea>
+                </li>
+                <li>
+                  <p>Age</p>
+                  <ul class="flex-inner">
+                    <li>
+                      <input type="checkbox" id="eighteen-to-thirtyfive">
+                      <label for="eighteen-to-thirtyfive">18-35</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="thirtyfive-to-fifty">
+                      <label for="thirtyfive-to-fifty">35-50</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="fifty-to-sixtyfive">
+                      <label for="fifty-to-sixtyfive">50-65</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button type="submit">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+    </body>
+
+</html>
