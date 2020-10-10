@@ -60,6 +60,7 @@ function changeToFruits() {
     .then((response) => {
         const fruits = ["Apples", "Mango", "Nuts"];
         const checks = document.querySelectorAll(".flex-inner label");
+        document.querySelector(".flex-outer p").innerText = "Fruits";
         console.log(checks.length, checks[0]);
         checks.forEach(((check, i) => {
             console.log(check, i);
