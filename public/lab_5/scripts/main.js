@@ -1,17 +1,19 @@
 
-
 // Question 2
-let myButtons = document.querySelector('button');
-myButtons.style.marginRight = "10px";
-myButtons.style.color = "red";
+let myButtons = document.querySelectorAll('button');
+myButtons.forEach(((bnt, i) => {
+    bnt.style.marginRight = "10px";
+    bnt.style.color = "red";
+}));
+
 
 // Question 3
 let myCheckboxes = document.querySelector(".flex-inner li");
 myCheckboxes.style.width = "95px"
 
 //Question 4
-let selection = document.getElementsByName("Age");
-//selection.classList.add(".checkbox-list-label");
+let selct = document.querySelector(".flex-outer p");
+selct.classList.add(".checkbox-list-label");
 
 //Question 5
 const newButton = document.createElement("button");
@@ -20,12 +22,11 @@ const btntext = document.createTextNode("Activate");
 newButton.setAttribute("type", "button");
 newButton.appendChild(btntext);
 
-document.querySelector(".flex-outer").appendChild(newButton);
+document.querySelector("button").after(newButton);
 
 //Question 6
-newButton.onclick = function(){
-    //alert("You clicked me");
-}
+newButton.addEventListener("click", testFunction);
+newButton.addEventListener("click", changeToFruits());
 
 //Question 7
 
@@ -35,24 +36,22 @@ function testFunction() {
     .then((response) => response.text())
     .then((response) => {
          console.log(response);
+         //Question 10
+         document.querySelector("header h1").innerText = response;
+         document.querySelector("title").innerText = response;
+
+         console.log(document.querySelector("title"));
       })
 
-
-      //Question 10
-      let headerElmt = document.querySelector("header");
-      let titleElmt = document.querySelector("title");
 
       //Question 11
       document.body.style.backgroundColor = "blue";
 
       //Question 12
-      document.querySelector(".flex-outer").style.margin = "auto"
+      document.querySelector(".flex-outer").style.margin = "auto";
 
     
 }
-
-newButton.onclick(testFunction());
-
 
 //Question 13
 function changeToFruits() {
@@ -69,9 +68,6 @@ function changeToFruits() {
          console.log(response);
       })
 }
-
- newButton.onclick(changeToFruits());
-
 
 
 /*function clickSubmit()
