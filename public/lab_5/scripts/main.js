@@ -26,7 +26,7 @@ document.querySelector("button").after(newButton);
 
 //Question 6
 newButton.addEventListener("click", testFunction);
-newButton.addEventListener("click", changeToFruits());
+newButton.addEventListener("click", changeToFruits);
 
 //Question 7
 
