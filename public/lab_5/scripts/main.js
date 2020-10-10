@@ -23,9 +23,9 @@ newButton.appendChild(btntext);
 document.querySelector(".flex-outer").appendChild(newButton);
 
 //Question 6
-/*newButton.onclick = function(){
-    alert("You clicked me");
-}*/
+newButton.onclick = function(){
+    //alert("You clicked me");
+}
 
 //Question 7
 
