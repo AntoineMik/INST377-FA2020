@@ -68,11 +68,3 @@ function changeToFruits() {
          console.log(response);
       })
 }
-
-
-/*function clickSubmit()
-{
-    const content = document.querySelector();
-    content.innerHTML = "";
-}
-*/
