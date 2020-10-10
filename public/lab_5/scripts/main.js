@@ -11,21 +11,24 @@ myCheckboxes.style.width = "95px"
 
 //Question 4
 let selection = document.getElementsByName("Age");
-selection.classList.add(".checkbox-list-label");
+//selection.classList.add(".checkbox-list-label");
 
 //Question 5
-const newButton = document.createElement("newBtn");
-newButton.toggleClass("active");
+const newButton = document.createElement("button");
+const btntext = document.createTextNode("Activate");
+//newButton.toggleClass("Active");
 newButton.setAttribute("type", "button");
+newButton.appendChild(btntext);
+
+document.querySelector(".flex-outer").appendChild(newButton);
 
 //Question 6
-newButton.onclick = function(){
+/*newButton.onclick = function(){
     alert("You clicked me");
-}
+}*/
 
 //Question 7
 
-//Question 10
 
 function testFunction() {
     fetch('/api')
@@ -33,11 +36,22 @@ function testFunction() {
     .then((response) => {
          console.log(response);
       })
+
+
+      //Question 10
+      let headerElmt = document.querySelector("header");
+      let titleElmt = document.querySelector("title");
+
+      //Question 11
+      document.body.style.backgroundColor = "blue";
+
+      //Question 12
+      document.querySelector(".flex-outer").style.margin = "auto"
+
     
 }
 
-
-//Question 12
+newButton.onclick(testFunction());
 
 
 //Question 13
