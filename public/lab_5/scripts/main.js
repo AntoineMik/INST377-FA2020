@@ -59,7 +59,7 @@ function changeToFruits() {
     fetch('/api')
     .then((response) => response.text())
     .then((response) => {
-        const fruits = ["Apples", "Manfo", "Pineapple"];
+        const fruits = ["Apples", "Manfo", "Nuts"];
         const checks = document.querySelectorAll(".flex-inner label");
         console.log(checks.length, checks[0]);
         checks.forEach(((check, i) => {
