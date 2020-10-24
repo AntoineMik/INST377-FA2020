@@ -1,5 +1,14 @@
 // You may wish to find an effective randomizer function on MDN.
 
+//const { default: countries } = require("./countries");
+
+//Random function from MDN
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive 
+}
+
 function range(int) {
   const arr = [];
   for (let i = 0; i < int; i += 1) {
@@ -30,6 +39,10 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
+      // Getting ten random countries from the returned value
+      const randCountries = range(10).map(() => { fromServer(getRandomIntInclusive(0, 243)) });
+      console.table(randCountries);
+      
       console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
