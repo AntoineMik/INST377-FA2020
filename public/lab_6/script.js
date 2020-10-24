@@ -40,7 +40,7 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
       // Getting ten random countries from the returned value
-      const randCountries = range(10).map(() => { fromServer(getRandomIntInclusive(0, 243)) });
+      const randCountries = range(10).map(() => { return fromServer(getRandomIntInclusive(0, 243)) });
       console.table(randCountries);
       
       console.log('fromServer', fromServer);
