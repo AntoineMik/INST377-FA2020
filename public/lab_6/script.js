@@ -1,5 +1,7 @@
 // You may wish to find an effective randomizer function on MDN.
 
+//const { inArray } = require("cypress/types/jquery");
+
 //const { default: countries } = require("./countries");
 
 //Random function from MDN
@@ -44,8 +46,18 @@ document.body.addEventListener('submit', async (e) => {
         document.querySelector(".flex-inner").remove();
       }
 
-      // Getting ten random countries from the returned value
-      const randCountries = range(10).map(() => { return fromServer[getRandomIntInclusive(0, 243)]});
+      // Getting ten random countries from the returned value. Making sure no repeat. (Brute force)
+      const randCountries = range(10).map(() => {
+        const knownCountries = [];
+        ran = getRandomIntInclusive(0, 243);
+        if ($.inArray(ran, knownCountries) > - 1)
+        {
+          ran = getRandomIntInclusive(0, 243);
+        }
+
+        knownCountries.push(ran);
+
+        return fromServer[ran]});
       console.table(randCountries);
 
       //Sorting the countries in reverse alphabetic order
