@@ -38,17 +38,36 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      // You're going to do your lab work in here. Replace this comment.
+      // Resetting.
+      if(document.querySelector(".flex-inner"))
+      {
+        document.querySelector(".flex-inner").remove();
+      }
+
       // Getting ten random countries from the returned value
       const randCountries = range(10).map(() => { return fromServer[getRandomIntInclusive(0, 243)]});
       console.table(randCountries);
 
       //Sorting the countries in reverse alphabetic order
       const sortedCountries = randCountries.sort((a, b) => sortFunction(b, a, "name"));
-      console.table(sortedCountries);
+      console.log(sortedCountries);
 
       //const sortedCountries2 = randCountries.sort((a, b) => sortFunction(a, b, "name"));
 
+      // Adding ordered list element with flexinner
+      const orderedlist = document.createElement("ol");
+      orderedlist.className = "flex-inner";
+      $("form").prepend(orderedlist);
+
+      // Injecting list elements
+      sortedCountries.forEach((elmt) => {
+        const newList = document.createElement("li");
+        $(newList).append(`<input type = "checkbox" value = ${elmt.code} id = ${elmt.code} />`);
+        $(newList).append(`<label for = ${elmt.code} > ${elmt.name} </label>`);
+
+        $(orderedlist).append(newList);
+      });
+      console.log(orderedlist);
 
       console.log('fromServer', fromServer);
     })
