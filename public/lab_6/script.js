@@ -50,7 +50,7 @@ document.body.addEventListener('submit', async (e) => {
       const randCountries = range(10).map(() => {
         const knownCountries = [];
         ran = getRandomIntInclusive(0, 243);
-        if ($.inArray(ran, knownCountries) > - 1)
+        while ($.inArray(ran, knownCountries) > - 1)
         {
           ran = getRandomIntInclusive(0, 243);
         }
