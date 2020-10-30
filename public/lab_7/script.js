@@ -7,6 +7,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
   CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
+    ["0b4f6c","823200","9b3d12","01baef","c1df1f"]
   ]);
 
   return {
