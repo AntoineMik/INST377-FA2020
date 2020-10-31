@@ -52,21 +52,21 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
           startValue: 40,
 	        endValue: 50,
 	        color: "blue",
-	        type: "waved"
+	        type: "straight"
         },
         {
           startValue: 85,
 	        endValue: 100,
-	        color: "blue",
-	        type: "waved"
+	        color: "red",
+	        type: "straight"
         },
         {
           startValue: 140,
 	        endValue: 175,
 	        color: "blue",
-	        type: "waved"
+	        type: "straight"
         }
-      ]}, // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      ]} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
     },
     data: [{
       type: 'bar',
