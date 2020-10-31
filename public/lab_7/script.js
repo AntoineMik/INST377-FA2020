@@ -7,7 +7,7 @@ function convertRestaurantsToCategories(restaurantList) {
       collection.push(
         {
           label: item.category,
-          y = 1
+          y: 1
         }
       );
     } 
@@ -25,7 +25,11 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
   CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
-    ["0b4f6c","823200","9b3d12","01baef","c1df1f"]
+    "#0b4f6cff",
+    "#823200ff",
+    "#9b3d12ff",
+    "01baefff",
+    "#c1df1fff"
   ]);
 
   return {
