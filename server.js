@@ -31,6 +31,7 @@ app.route('/api')
     console.log('POST request detected');
     const data = await fetch(" https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json");
     const newdata = await data.json();
+    console.log('Form data', newdata);
     res.json(newdata);
     
     //res.send('<b>Hello World</b>');
